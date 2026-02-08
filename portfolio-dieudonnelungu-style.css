@@ -7,6 +7,12 @@
     --accent: #64ffda;
     --card: #112240;
     --shadow: rgba(0,0,0,0.3);
+
+    /* button background & style */
+    --btn-bg: var(--accent);
+    --btn-color: #000;
+    --btn-outline: transparent;
+
 }
 [data-theme="light"]{
     --bg: #ffffff;
@@ -17,12 +23,20 @@
     --accent: #0ea5e9;
     --shadow: rgba(0,0,0,0.1);
 }
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
 
 /* Global & reset */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
 html{
@@ -198,22 +212,22 @@ section{
 /* Buttons styles */
 .btn{
     padding: 0.7rem 1.6rem;
-    background: var(--accent);
-    color: #000;
+    background: var(--btn-bg);
+    color: var(--btn-color);
     border-radius: 6px;
     font-weight: 600;
     display: inline-block;
 }
 
 .btn.outline{
-    background: transparent;
+    background: var(--btn-outline);
     border: 1px solid var(--accent);
     color: var(--accent);
 }
 
 /* Sections style */
 .section{
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     max-width: 1000px;
     margin: auto;
 }

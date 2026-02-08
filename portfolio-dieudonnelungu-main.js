@@ -2,20 +2,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const html = document.documentElement;
 
-    /* =====================
-       MENU TOGGLE
-    ===================== */
+    /* MENU TOGGLE */
     const menuBtn = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav-menu");
 
     menuBtn.addEventListener("click", () => {
         nav.classList.toggle("open");
         menuBtn.classList.toggle("active");
+
+        menuBtn.setAttribute("aria-expanded", isOpen)//accessibility
     });
 
-    /* =====================
-       DARK MODE (CENTRAL)
-    ===================== */
+    /* DARK MODE (global) */
     const themeToggle = document.getElementById("themeToggle");
     const themeSwitch = document.getElementById("themeSwitch");
 
@@ -28,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         if (themeSwitch) {
             themeSwitch.checked = theme === "dark";
+        }
+        if (themeToggle) {
+            themeToggle.setAttribute("aria-pressed", theme === "dark");
         }
     }
 
@@ -50,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-    /* =====================
-       LANGUAGE TOGGLE
-    ===================== */
+    /* LANGUAGE TOGGLE */
     const langToggle = document.getElementById("langToggle");
     let lang = "en";
 
@@ -64,9 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-    /* =====================
-       PWA
-    ===================== */
+    /* PWA */
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");
     }
