@@ -112,7 +112,7 @@ let translations = {
         backend_node: "Node.js",
         backend_typescript: "TypeScript",
         backend_React: "React, ReactJS, React Native",
-        
+
         contact_title: "Contact",
         contact_paragraph:"Have a project, an idea or an opportunity? Let's talk and build something great together.",
         send_message: "Send me a direct message here",
@@ -149,7 +149,7 @@ let translations = {
         project_4_desc: "Encours - Un site web moderne axé sur IU/UX.",
         project_4_link: "Encours, consultez le projet sur GitHub",
 
-        skills_title: "Commpétences",
+        skills_title: "Compétences",
         skills_fronted: "Développement Frontend :",
         html_5: "HTML5",
         css_3:"CSS3 / Flexbox / Grille",
@@ -194,3 +194,12 @@ langToggle.addEventListener("click", () => {
     applayTranslations(currentLang);//apply translation
     langToggle.textContent = currentLang === "en" ? "FR" : "EN";// update button text
 });
+
+//Get Year automaticaly in copyright
+const startYear = 2025 ;
+const currentYear = new Date().getFullYear();
+const yearElement = document.getElementById("currentYear");
+
+if (yearElement){
+    yearElement.textContent = `${startYear} - ${currentYear}`;
+}
