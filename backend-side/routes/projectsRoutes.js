@@ -13,3 +13,14 @@ router.get("/:id", projectsController.getProjectById);
 router.get("/", projectsController.createProject);
 
 module.exports = router;
+exports.getAllProjects = (req, res) => {
+    res.json({ message: "List of all projects" });
+};
+
+exports.getProjectById = (req, res) => {
+    res.json({ message: "Projects details", id: req.params.id });
+};
+
+exports.createProject = (req, res) => {
+    res.json({ message: "Project created", data: req.body });
+};
