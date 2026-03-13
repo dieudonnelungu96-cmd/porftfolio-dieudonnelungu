@@ -19,5 +19,3 @@ db.connect((err) => {
     console.log("Connected to mySQL database");
 });
 module.exports = db;
-
-const db = require("../config/db");

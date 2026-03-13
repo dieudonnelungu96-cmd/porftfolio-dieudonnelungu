@@ -1,24 +1,9 @@
-let projectViews = [
-    { projectId: 1, views: 0 },
-    { projectId: 2, views: 0 }
-];
-
-exports.getAll = () => projectViews;
-
-exports.increment = (projectId) => {
-    const project = projectViews.find(p => p.projectId == projectId);
-    if (!project) return null;
-    project.views += 1;
-    return project;
-};
-
-
 const db = require("../config/db");
 
 //Save a view
 exports.trackVisit = (data, callback) => {
     const query = `
-    INSERT TO analytics
+    INSERT INTO analytics
     (ip_address, user_agent, page_visited)
     VALUES (?, ?, ?)
     `;

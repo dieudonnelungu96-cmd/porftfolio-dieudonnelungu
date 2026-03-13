@@ -5,11 +5,8 @@ const validationContact = require("../middleware/validatConnect");
 
 const contactLimiter = require("../middleware/contactRateLimiter");
 
-router.post("/", contactLimiter, contactController.createContact);
-
 //POST contact form submission
-router.post("/", contactController.submitContactForm);
-router.post("/", validationContact, contactController.submitContactForm);
+router.post("/", contactLimiter, validationContact, contactController.createContact);
 
 //GET all contacts (admin)
 router.get("/", contactController.getAllContacts);

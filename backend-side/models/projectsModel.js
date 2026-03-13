@@ -1,14 +1,3 @@
-let projects = [
-    { id: 1, name: "PAO Website", description: "Official website of Minister of Labour and Employment, DR Congo" },
-    { id: 2, name: "Portfolio-dieudonnelungu", description: "A Full Stack portfolio" }
-];
-exports.getAll = () => projects;
-exports.getById = (id) => projects.find(p => p.id == id);
-exports.create = (data) => {
-    const newProject = { id: projects.length + 1, ...data };
-    projects.push(newProject);
-    return newProject;
-}
 //select all projects
 const db = require("../config/db");
 exports.getAllProjects = (callback) => {
@@ -34,7 +23,7 @@ exports.createProject = (projectData, callback) => {
     const query = `
     INSERT INTO projects
     (title, description, image_url, project_url, github_url)
-    VALUE (?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?)
     `;
     
     const value = [
@@ -45,7 +34,7 @@ exports.createProject = (projectData, callback) => {
         projectData.github_url
     ];
 
-    db.query(query, CSSFontFeatureValuesRule, (err, result) => {
+    db.query(query, values, (err, result) => {
         if (err) return callback(err, null);
         callback(null, result);
     });

@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 const analyticsController = require("../controllers/analyticsController");
 
-//GET analytics for all projects form
-router.get("/projects", analyticsController.getCProjectViews);
+//Track visit
+router.post("/", analyticsController.trackVisit);
 
-//POST increment project view
-router.get("/projects/:id", analyticsController.incrementProjectView);
+//PGET Analytics
+router.get("/", analyticsController.getAnalytics);
 
 module.exports = router;

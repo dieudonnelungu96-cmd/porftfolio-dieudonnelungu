@@ -8,7 +8,7 @@ const app = express();
 const projectsRoutes = require("./routes/projectsRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 const analyticsRoutes = require("./routes/analyticsRoutes");
-const adminRoutes = require("../admin-dashboard/routes/adminRoutes");
+const adminRoutes = require("./admin-dashboard/routes/adminRoutes");
 
 app.use("/api/admin", adminRoutes);
 

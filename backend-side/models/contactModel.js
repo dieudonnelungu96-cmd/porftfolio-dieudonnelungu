@@ -1,13 +1,3 @@
-let contact = [];
-
-exports.create = (data) => {
-    const newConctact = { id: contact.length + 1, ...data};
-    contacts.push(newConctact);
-    return;
-};
-
-exports.getAll = () => contacts;
-
 const db = require("../config/db");
 
 //create contact message
