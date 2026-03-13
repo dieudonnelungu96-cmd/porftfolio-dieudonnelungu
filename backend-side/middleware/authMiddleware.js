@@ -1,6 +1,6 @@
 //Middleware/Simple authentication, check the key admin is shared in headers
 require("dotenv").config();
-modules.exports = (req, res, next) => {
+module.exports = (req, res, next) => {
     const adminKey = req.headers["x-admin-key"];
 
     //Saved key admin in  .env

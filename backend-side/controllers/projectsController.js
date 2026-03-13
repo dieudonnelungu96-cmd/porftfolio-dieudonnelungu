@@ -18,7 +18,7 @@ exports.createProject = (req, res) => {
     res.status(201).json(newProject);
 };
 
-const projectModel = require("../models/projectModel");
+const projectModel = require("../models/projectsModel");
 
 
 //GET ALL PROJECTS

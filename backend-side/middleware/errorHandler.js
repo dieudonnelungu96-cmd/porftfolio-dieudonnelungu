@@ -1,5 +1,5 @@
 //Middleware global for management error to avoid server break
-modules.exports = (err, req, res, next) => {
+module.exports = (err, req, res, next) => {
     console.error("Server Error:", err);
     res.status(err.status || 500).json({
         success: false,
