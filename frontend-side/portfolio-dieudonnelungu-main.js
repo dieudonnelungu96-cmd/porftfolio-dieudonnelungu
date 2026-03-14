@@ -99,26 +99,41 @@ let translations = {
         project_4_desc: "In progress - Modern IU/UX design website",
         project_4_link: "In progres project on GitHub",
 
-        skills_title: "Skills",
-        skills_fronted: "Frontend development:",
-        html_5: "HTML5",
-        css_3:"CSS3 / Flexbox / Grid",
+        skills_title:"Skills",
+        skills_comment: "As a frontend developer and backend developer learner, I have a strong foundation in creating responsive and accessible web applications and backend technologies. Let's look at my skills:",
+        skills_fronted_title: "1. Frontend development:",
+        css_3: "CSS3 / Flexbox / Grid",
         js_es6: "JavaScript (ES6+)",
-        skills_frontend_design: "Responsive Design",
+        skills_frontend_design: "Responsive Design UI/UX",
         skills_frontend_access: "Accessibility (a11y)",
         skills_frontend_pwa: "PWA Basics",
+        frontend_typescript: "TypeScript",
+        frontend_React: "React",
+        frontend_ReactJS: "ReactJS",
+        frontend_ReactNative: "React Native",
 
-        skills_backend: "Backend development:",
+        skills_backend_title: "2. Backend development:",
         backend_node: "Node.js",
-        backend_typescript: "TypeScript",
-        backend_React: "React, ReactJS, React Native",
+        backend_express: "Express",
+        backend_mysql: "MySQL",
+        backend_sql: "SQL",
 
         contact_title: "Contact",
         contact_paragraph:"Have a project, an idea or an opportunity? Let's talk and build something great together.",
         send_message: "Send me a direct message here",
         send_message_btn: "Send message",
+
+        follow_instagram: "Follow on Instagram",
+        follow_facebook: "Follow on Facebook",
+        follow_linkedin: "Follow on LinkedIn",
+        follow_github: "Follow on GitHub",
+        follow_tiktok: "Follow on TikTok",
+        call_me: "Call me",
+        send_email: "Send an email",
+        chat_whatsapp: "Chat on WhatsApp",
         copyright_developer: "© 2026 Dieudonné Lungu - Frontend Web Developer",
-        droits_reserves: "All rights reserved"
+        droits_reserves: "All rights reserved",
+        back_top: "Back to Top ↑"
         
     },
 
@@ -150,25 +165,41 @@ let translations = {
         project_4_link: "Encours, consultez le projet sur GitHub",
 
         skills_title: "Compétences",
-        skills_fronted: "Développement Frontend :",
-        html_5: "HTML5",
-        css_3:"CSS3 / Flexbox / Grille",
-        js_es6: "JavaScript (ES6+)",
-        skills_frontend_design: "Conceptiopn interactive",
-        skills_frontend_access: "Accessibilité (a11y)",
-        skills_frontend_pwa: "PWA Basics",
 
-        skills_backend: "Développement Backend :",
+        skills_comment: "Etant un développeur frontend et apprenant en développement backend, j'ai une solide base dans la création d'applications web réactives et accessibles ainsi que dans les technologies backend. Voyons mes compétences :",
+        skills_fronted_title:"1. Développement Frontend:", 
+        css_3: "CSS3 / Flexbox / Grid",
+        js_es6: "JavaScript (ES6+)",
+        skills_frontend_design: "Design Réactif UI/UX",
+        skills_frontend_access: "Accessibilité (a11y)",
+        skills_frontend_pwa: "Notions de PWA",
+        frontend_typescript: "TypeScript",
+        frontend_React: "React",
+        frontend_ReactJS: "ReactJS",
+        frontend_ReactNative: "React Native",
+
+        skills_backend_title: "2. Développement Backend:",
         backend_node: "Node.js",
-        backend_typescript: "TypeScript",
-        backend_React: "React, ReactJS, React Native",
+        backend_express: "Express",
+        backend_mysql: "MySQL",
+        backend_sql: "SQL",
+
 
         contact_title: "Contact",
         contact_paragraph:"Avez-vous un projet, une idée ou une opportinuité ? Discutons-en pour créer quelque chose de bon ensemble.",
         send_message: "Envoyez-moi un message direct Ici",
+        follow_facebook: "Suivez-moi sur Facebook",
+        follow_instagram: "Suivez-moi sur Instagram",
+        follow_linkedin: "Suivez-moi sur LinkedIn",
+        follow_github: "Suivez-moi sur GitHub",
+        follow_tiktok: "Suivez-moi sur TikTok",
+        call_me: "Appelez-moi",
+        send_email: "Envoyez un email",
+        chat_whatsapp: "Discutez sur WhatsApp",
         send_message_btn: "Soumettre",
         copyright_developer: "© 2026 Dieudonné Lungu - Développeur Web Frontend",
-        droits_reserves: "Tous Droits reservés"
+        droits_reserves: "Tous Droits reservés",
+        back_top: "Retour en haut ↑"
     }
 };
 

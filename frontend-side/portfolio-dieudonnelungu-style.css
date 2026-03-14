@@ -85,6 +85,14 @@ section{
     border-radius: 40px;
     
 }
+.logo-portfolio{
+    width: 5%;
+    height: 180%;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-top: auto;
+    padding: auto;
+}
 .nav-menu{
     display: flex;
     gap: 1.5rem;
@@ -271,18 +279,22 @@ section{
 
 /* Skills sections */
 .skills{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0.8rem;
+    margin-top: 1rem;
 }
 .skills li{
     list-style: none;
-    padding: 0.5rem 1rem;
     background: var(--bg-soft);
-    border-radius: 20px;
-    font-size: 0.85rem,
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 15px;
 }
-
 
 /* Contact info style */
 #contact{
@@ -496,4 +508,13 @@ input:checked + .slider::before{
 
 #backToTop:hover{
     opacity: 0.8;
+}
+
+.theme-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    background : var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
 }

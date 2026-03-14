@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo" src="frontend-side/assets/images/dieudo-image.PNG">DL</div>
+        <img src="./assets/images/dieudo-image.PNG" alt="Dieudonné Lungu" class="logo-portfolio">
         <button class="menu-toggle" id="menu-toggle"
         aria-label="Open navigation menu"
         aria-expanded="false"
@@ -29,19 +29,11 @@
             <a href="#projects" data-i18n="nav_projects">Projects</a>
             <a href="#skills" data-i18n="nav_skills">Skills</a>
             <a href="#contact" data-i18n="nav_contact">Contact</a>
+            <img src="assets/icons/mode-nuit.png" alt="Toggle dark mode" class="theme-icon" id="themeToggle">
         </nav>
         <div class="header-actions">
             <!-- Desktop buttons -->
-            <button id="themeToggle" class="theme-btn"
-            aria-label="Toggle dark mode"
-            aria-pressed="false" data-i18n="dark_mode_btn">Dark mode</button>
             <button id="langToggle" class="lang-btn" data-i18n="french_btn">French</button>
-
-            <!-- Mobile switch -->
-            <label class="theme-switch" aria-label="Toggle dark mode">
-                <input type="checkbox" id="themeSwitch">
-                <span class="slider"></span>
-            </label>
         </div>
     </header>
     <main>
@@ -90,22 +82,25 @@
 
         <section id="skills" class="section">   
             <h2 data-i18n="skills_title">Skills</h2>
-            <ul class="skills" data-i18n="skills_fronted"><strong>1. Frontend development:</strong>
+            <p data-i18n="skills_comment">As a frontend developer and backend developer learner, I have a strong foundation in creating responsive and accessible web applications and backend technologies. Let's look at my skills:</p>
+            <strong class="skills" data-i18n="skills_fronted_title">1. Frontend development:</strong>
+            <ul class="skills" data-i18n="skills_fronted">
                     <li data-i18n="css_3">CSS3 / Flexbox / Grid</li>
                     <li data-i18n="js_es6">JavaScript (ES6+)</li>
                     <li data-i18n="skills_frontend_design">Responsive Design UI/UX</li>
                     <li data-i18n="skills_frontend_access">Accessibility (a11y)</li>
                     <li data-i18n="skills_frontend_pwa">PWA Basics</li>
-                    <li data-i18n="backend_typescript">TypeScript</li>
-                    <li data-i18n="backend_React">React</li>
-                    <li data-i18n="backend_React">ReactJS</li>
-                    <li data-i18n="backend_React">React Native</li>
+                    <li data-i18n="frontend_typescript">TypeScript</li>
+                    <li data-i18n="frontend_React">React</li>
+                    <li data-i18n="frontend_React">ReactJS</li>
+                    <li data-i18n="frontend_React">React Native</li>
             </ul>
-            <ul class="skills" data-i18n="skills_backend"><strong>2. Backend development:</strong>
+            <strong class="skills" data-i18n="skills_backend_title">2. Backend development:</strong>
+            <ul class="skills" data-i18n="skills_backend">
                     <li data-i18n="backend_node">Node.js</li>
-                    <li>Express</li>
-                    <li>MySQL</li>
-                    <li>SQL</li>
+                    <li data-i18n="backend_express">Express</li>
+                    <li data-i18n="backend_mysql">MySQL</li>
+                    <li data-i18n="backend_sql">SQL</li> 
             </ul>
         </section>
 
@@ -115,35 +110,35 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span><a href="tel:+243996936815">Phone</a></span>
+                        <span><a href="tel:+243996936815" target="_blank" rel="noopener noreferrer" data-i18n="call_me">Call me</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span><a href="mailto:dieudonnelungu96@gmail.com" target="_blank">Courrier</a></span>
+                        <span><a href="mailto:dieudonnelungu96@gmail.com" target="_blank" rel="noopener noreferrer" data-i18n="send_email">Send an email</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-whatsapp"></i>
-                        <span><a href="https://wa.me/243996936815" target="_blank"></a></span>
+                        <span><a href="https://wa.me/243996936815" target="_blank" rel="noopener noreferrer" data-i18n="chat_whatsapp">Chat on WhatsApp</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-instagram"></i>
-                        <span><a href="https://www.instagram.com/lungudieudonne/" target="_blank"></a></span>
+                        <span><a href="https://www.instagram.com/lungudieudonne/" target="_blank" rel="noopener noreferrer" data-i18n="follow_instagram">Follow on Instagram</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-facebook-f"></i>
-                        <span><a href="https://web.facebook.com/dieudonnegustave.lungu" target="_blank"></a></span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-x-twitter"></i>
-                        <span><a href="https://twitter.com/dieudonne_lungu" target="_blank"></a></span>
+                        <span><a href="https://web.facebook.com/dieudonnegustave.lungu" target="_blank" rel="noopener noreferrer" data-i18n="follow_facebook">Follow on Facebook</a></span> 
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin-in"></i>
-                        <span><a href="https://www.linkedin.com/in/dieudonn%C3%A9-lungu-434209252/" target="_blank"></a></span>
+                            <span><a href="https://www.linkedin.com/in/dieudonn%C3%A9-lungu-434209252/" target="_blank" rel="noopener noreferrer" data-i18n="follow_linkedin">Follow on LinkedIn</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
-                        <span><a href="https://github.com/dieudonnelungu96-cmd" target="_blank"></a></span>
+                        <span><a href="https://github.com/dieudonnelungu96-cmd" target="_blank" rel="noopener noreferrer" data-i18n="follow_github">Follow on GitHub</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-tiktok"></i> 
+                        <span><a href="https://www.tiktok.com/@dieudonnelungu" target="_blank" rel="noopener noreferrer" data-i18n="follow_tiktok">Follow on TikTok</a></span>
                     </div>
                 </div>
                 <form class="contact-form" method="get" src="../database/database.sql">
@@ -154,9 +149,9 @@
                         <button type="submit" class="btn" data-i18n="send_message_btn">Send message</button>
                 </form>
         </section>
-        <button id="backToTop" aria-label="Back to Top">
-            Up page
-            ∆ 
+        <button id="backToTop" aria-label="Back to Top" data-i18n="back_top"">
+            Back to Top
+            ↑ 
         </button>
     </main>
     <footer class="footer" role="contentinfo">
